@@ -843,22 +843,7 @@ static void apply_replacement( std::vector<std::vector<T>> &vec, const std::stri
         }
         // Both target and replacement, remove the target entry and leave the existing replacement.
         opts.erase( target );
-        opts.erase( std::remove_if( opts.begin(), opts.end(), [&id]( const T & e ) {
-            return e.type == id;
-        } ), opts.end() );
     }
-
-    // did we remove the last instance of an option group?
-    const bool blacklisted = std::any_of( vec.begin(), vec.end(), []( const std::vector<T> &e ) {
-        return e.empty();
-    } );
-
-    // if an option group is left empty then it can be removed
-    vec.erase( std::remove_if( vec.begin(), vec.end(), []( const std::vector<T> &e ) {
-        return e.empty();
-    } ), vec.end() );
-
-    return blacklisted;
 }
 
 void requirement_data::replace_item( const itype_id &id, const itype_id &replacement ) {
