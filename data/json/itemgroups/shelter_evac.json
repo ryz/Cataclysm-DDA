@@ -1,0 +1,8 @@
+[   
+  {
+    "id": "shelter_supplies",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ [ "jacket_evac", 100 ], [ "emer_blanket", 100 ], [ "mask_gas", 12 ] ]
+  }
+]
