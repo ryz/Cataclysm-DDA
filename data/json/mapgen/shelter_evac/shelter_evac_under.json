@@ -113,7 +113,7 @@
     {
         "type": "mapgen",
         "method": "json",
-        "weight": 9999,
+        "weight": 100,
         "om_terrain": [ "shelter_under" ],
         "//": "evac basement: rooms7, furnished",
         "object": {
@@ -187,7 +187,7 @@
     {
         "type": "mapgen",
         "method": "json",
-        "weight": 99999,
+        "weight": 100,
         "om_terrain": [ "shelter_under" ],
         "//": "evac basement: rooms3, furnished",
         "object": {

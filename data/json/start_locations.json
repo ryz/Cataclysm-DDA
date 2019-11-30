@@ -2,25 +2,25 @@
   {
     "type": "start_location",
     "ident": "shelter",
-    "name": "Shelter",
+    "name": "Shelter Type A",
     "target": "shelter"
   },
   {
     "type": "start_location",
     "ident": "shelter_1",
-    "name": "Shelter",
+    "name": "Shelter Type B",
     "target": "shelter_1"
   },
   {
     "type": "start_location",
     "ident": "shelter_2",
-    "name": "Shelter",
+    "name": "Shelter Type C",
     "target": "shelter_2"
   },
   {
     "type": "start_location",
     "ident": "shelter_3",
-    "name": "Shelter",
+    "name": "Shelter Type D",
     "target": "shelter_3"
   },
   {

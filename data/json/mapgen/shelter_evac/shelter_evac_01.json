@@ -1,5 +1,5 @@
 [
-    {
+  {
       "type": "mapgen",
       "method": "json",
       "weight": 100,
@@ -27,7 +27,7 @@
           "    :.b.b.b........:    ",
           "    |.b.b.b....c...|    ",
           "    |.b.b.b....c...|    ",
-          "    |||.b.b....c...|    ",
+          "    |--.b.b....c...|    ",
           "    |*=........c..x|    ",
           "    |----:--+-:----|4   "
         ],
@@ -44,8 +44,100 @@
           }
         }
       }
-    },
-    {
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "weight": 100,
+    "om_terrain": [ "shelter" ],
+    "object": {
+      "rows": [
+        "    !!!!!!!!!!!!!!!!    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    &&&&&&&&&&&&&&&&    ",
+        "    |--:---++---:--|    ",
+        "    |..............|    ",
+        "    |.bbbbb..bbbbb.|    ",
+        "    :..............:    ",
+        "    |.bbbbb..bbbbb.|    ",
+        "    |..............|    ",
+        "    |......6x......|    ",
+        "    |c....----....c|    ",
+        "    :c...l|>>|l...c:    ",
+        "    :c...l|++|l...c:    ",
+        "    |c............c|    ",
+        "    |..............|    ",
+        "    |..............|    ",
+        "    |--............|    ",
+        "    |*=............|    ",
+        "    |----:----:--+-|4   "
+      ],
+      "palettes": [ "shelter" ],
+      "items": { "l": { "item": "shelter_supplies", "chance": 20, "repeat": [ 0, 1 ] } },
+      "computers": {
+        "6": {
+          "name": "Evac shelter computer",
+          "options": [
+            { "name": "Emergency Message", "action": "emerg_mess" },
+            { "name": "Disable External Power", "action": "complete_disable_external_power" },
+            { "name": "Contact Us", "action": "emerg_ref_center" }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "weight": 100,
+    "om_terrain": [ "shelter" ],
+    "object": {
+      "rows": [
+        "    !!!!!!!!!!!!!!!!    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    &&&&&&&&&&&&&&&&    ",
+        "    |-----:++:-----|    ",
+        "    |bbbb......bbbb|    ",
+        "    :b............b:    ",
+        "    |bbbb......bbbb|    ",
+        "    |------++------|    ",
+        "    |6............x|    ",
+        "    :..............:    ",
+        "    |l.....>>.....l|    ",
+        "    |l.....>>.....l|    ",
+        "    :..............:    ",
+        "    |ccccc....ccccc|    ",
+        "    |------++------|    ",
+        "    :..............|    ",
+        "    |=|c...........:    ",
+        "    |*|ccc.........|    ",
+        "    |----:-------+-|4   "
+      ],
+      "palettes": [ "shelter" ],
+      "items": { "l": { "item": "shelter_supplies", "chance": 20, "repeat": [ 0, 1 ] } },
+      "computers": {
+        "6": {
+          "name": "Evac shelter computer",
+          "options": [
+            { "name": "Emergency Message", "action": "emerg_mess" },
+            { "name": "Disable External Power", "action": "complete_disable_external_power" },
+            { "name": "Contact Us", "action": "emerg_ref_center" }
+          ]
+        }
+      }
+    }
+  },
+  {
       "type": "mapgen",
       "method": "json",
       "om_terrain": "shelter_roof",
@@ -91,4 +183,5 @@
         "furniture": { ":": "f_standing_tank", "#": "f_solar_unit", "&": "f_roof_turbine_vent" },
         "place_items": [ { "item": "roof_trash", "x": [ 5, 17 ], "y": [ 9, 22 ], "chance": 50, "repeat": [ 1, 3 ] } ]
       }
-    }]
+  }
+]
