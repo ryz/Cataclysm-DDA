@@ -50,6 +50,7 @@
     "method": "json",
     "weight": 100,
     "om_terrain": [ "shelter" ],
+    "//": "Evac Shelter Type A, Variant 2 (shelter)",
     "object": {
       "rows": [
         "    !!!!!!!!!!!!!!!!    ",
@@ -96,6 +97,7 @@
     "method": "json",
     "weight": 100,
     "om_terrain": [ "shelter" ],
+    "//": "Evac Shelter Type A, Variant 3 (shelter)",
     "object": {
       "rows": [
         "    !!!!!!!!!!!!!!!!    ",

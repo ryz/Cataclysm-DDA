@@ -1,5 +1,5 @@
 [
-    {
+  {
     "type": "mapgen",
     "method": "json",
     "weight": 100,
@@ -28,6 +28,53 @@
         "   --ccc..b..b..ccc--   ",
         "    |..c..b..b..c..|    ",
         "    |6....b..b....x|4   ",
+        "    |--|........|--|    ",
+        "       |-:--+-:-|       "
+      ],
+      "palettes": [ "shelter" ],
+      "items": { "l": { "item": "shelter_supplies", "chance": 20, "repeat": [ 0, 1 ] } },
+      "computers": {
+        "6": {
+          "name": "Evac shelter computer",
+          "options": [
+            { "name": "Emergency Message", "action": "emerg_mess" },
+            { "name": "Disable External Power", "action": "complete_disable_external_power" },
+            { "name": "Contact Us", "action": "emerg_ref_center" }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "weight": 100,
+    "om_terrain": [ "shelter_2" ],
+    "//": "Evac Shelter Type C, Variant 2 (shelter_2)",
+    "object": {
+      "rows": [
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    &&&&&&&&&&&&&&&&    ",
+        "       |-:-++-:-|       ",
+        "    |--|........|--|    ",
+        "    |*|x..........6|    ",
+        "    |=|...bbbb.....|    ",
+        "   --..............--   ",
+        "   |.....bbbbbb.....|   ",
+        "   :................:   ",
+        "   |b..............b|   ",
+        "   |b.....llll.....b|   ",
+        "   |b....c|--|c....b|   ",
+        "   |b....c|>>|c....b|   ",
+        "   :................:   ",
+        "   |................|   ",
+        "   --....bbbbbb....--   ",
+        "    |c............c|    ",
+        "    |cc...bbbb...cc|4   ",
         "    |--|........|--|    ",
         "       |-:--+-:-|       "
       ],

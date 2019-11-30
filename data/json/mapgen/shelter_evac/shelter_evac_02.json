@@ -48,6 +48,53 @@
   {
     "type": "mapgen",
     "method": "json",
+    "weight": 100,
+    "om_terrain": [ "shelter_1" ],
+    "//": "Evac Shelter Type B, Variant 2 (shelter_2)",
+    "object": {
+      "rows": [
+        "    !!!!!!!!!!!!!!!!    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    `!!!!`!!!!`!!!!`    ",
+        "    &&&|---++---|&&&    ",
+        "       |bb....bb|       ",
+        "    |-:|b......b|       ",
+        "    |x.c........|:-|    ",
+        "    |..c........b.c|    ",
+        "    |.cc........b.c|    ",
+        "    :...........b.c:    ",
+        "    |c.b........b.c|    ",
+        "    |c.b...........|    ",
+        "    |c.b....l|||...|    ",
+        "    |c.b....l|*=...|    ",
+        "    :.......l|||...:    ",
+        "    |........bb|-+-|    ",
+        "    |.........b|..l|    ",
+        "    |.........b|>.l|    ",
+        "    |6cccc...bb|>.l|4   ",
+        "    |----:--+-:----|    "
+      ],
+      "palettes": [ "shelter" ],
+      "items": { "l": { "item": "shelter_supplies", "chance": 20, "repeat": [ 0, 1 ] } },
+      "computers": {
+        "6": {
+          "name": "Evac shelter computer",
+          "options": [
+            { "name": "Emergency Message", "action": "emerg_mess" },
+            { "name": "Disable External Power", "action": "complete_disable_external_power" },
+            { "name": "Contact Us", "action": "emerg_ref_center" }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
     "om_terrain": "shelter_roof_1",
     "weight": 100,
     "object": {
